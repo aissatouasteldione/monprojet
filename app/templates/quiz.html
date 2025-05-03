@@ -1,0 +1,21 @@
+<!-- templates/quiz.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Question</h2>
+        <p>{{ question.text }}</p>
+        <!-- Formulaire pour soumettre la réponse -->
+        <form method="POST" action="{{ url_for('routes.result') }}">
+            <input type="text" name="answer" placeholder="Réponse" class="input-field">
+            <button type="submit" class="btn">Soumettre</button>
+        </form>
+    </div>
+</body>
+</html>
