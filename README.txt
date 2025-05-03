@@ -1,21 +1,13 @@
-Instructions d'installation du projet Quiz
+Projet de Jeu Interactif : Sénégal, Gambie, et Mauritanie
+Description du Projet
+Ce projet consiste en un jeu interactif qui met en valeur la culture, l'histoire et la géographie du Sénégal, de la Gambie, et de la Mauritanie. Le jeu propose des quiz éducatifs où les utilisateurs peuvent tester leurs connaissances sur ces pays.
 
-1. Crée un environnement virtuel :
-   python -m venv venv
+Les questions couvrent des sujets variés comme :
 
-2. Active-le :
-   - Windows : venv\Scripts\activate
-   - Linux/macOS : source venv/bin/activate
+La géographie
 
-3. Installe les dépendances :
-   pip install -r requirements.txt
+L'histoire
 
-4. Initialise la base :
-   flask db init
-   flask db migrate -m "Initial"
-   flask db upgrade
+Nom d'utilisateur : admin
 
-5. Lance le serveur :
-   flask run
-
-Accède à : http://localhost:5000
+Mot de passe : admin123
